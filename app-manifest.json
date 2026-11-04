@@ -1,0 +1,12 @@
+{
+  "name": "XuperTV",
+  "id": "com.xuper.tv.vidaa",
+  "version": "1.1.0",
+  "platform": "VIDAA HTML5",
+  "entry": "index.html",
+  "resolution": "1920x1080",
+  "content_items": 638,
+  "package_type": "hosted-web-app-test-build",
+  "target_device": "Hisense 50A65NV / VIDAA U9",
+  "notes": "Añade puente VIDAA de diagnóstico de capacidades HTML5; no es paquete VIDAA firmado."
+}

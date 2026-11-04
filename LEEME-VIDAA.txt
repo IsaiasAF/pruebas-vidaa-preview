@@ -1,0 +1,29 @@
+XuperTV para Hisense VIDAA U9 — versión 1.1.0 (pruebas)
+
+OBJETIVO
+Fuente HTML5 alojada para probar interfaz y navegación en televisores Hisense VIDAA. Esta versión añade diagnóstico de capacidades del navegador para orientar las siguientes adaptaciones.
+
+CAMBIOS 1.1.0
+- Añade vidaa-bridge.js, un puente pequeño de diagnóstico sin dependencias.
+- Muestra en Ajustes la plataforma detectada, tamaño de pantalla y soporte declarado por el navegador para MP4, HLS, DASH y almacenamiento local.
+- Añade callbacks opcionales Hisense_onAppShow / Hisense_onAppHide sin reemplazar funciones existentes.
+- Conserva el prototipo y la navegación con flechas, OK y regreso.
+
+IMPORTANTE
+- La detección canPlayType() es orientativa: no garantiza que una URL real se reproduzca. CORS, cabeceras, códecs, DRM, licencias y servidor pueden impedirlo.
+- La mayoría de fichas del catálogo son metadatos locales y no tienen enlaces de reproducción. No se inventan canales ni URLs.
+- El servicio Luna/Node, proxy y FFmpeg de webOS no se ejecutan dentro de una página VIDAA; necesitan una arquitectura compatible aparte.
+- Esta carpeta es una aplicación web alojada para pruebas, no un paquete VIDAA firmado ni una instalación en el launcher.
+- No incluir tokens, credenciales ni sesiones compartidas. No eludir DRM, autenticación, georrestricciones ni bloqueos del proveedor.
+
+PRUEBA
+1. Abre la web publicada en el navegador de la TV.
+2. Entra en Ajustes y revisa “Compatibilidad detectada en este televisor”.
+3. Prueba flechas, OK, regreso, búsqueda, favoritos y apertura/cierre de fichas.
+4. Comparte una foto de ese bloque para ajustar las siguientes pruebas de reproducción.
+
+DISPOSITIVO OBJETIVO
+Hisense 50A65NV · VIDAA U9 · MediaTek MT9603BAATAC · firmware V000.09.60L.Q0623.
+
+CRÉDITOS Y LICENCIAS
+La adaptación conserva la atribución del proyecto XuperTV VIDAA anterior y debe mantener los avisos/licencias de los proyectos fuente y de terceros. Consulta LICENSE y THIRD_PARTY.md del proyecto original antes de redistribuir recursos.
